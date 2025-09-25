@@ -39,6 +39,9 @@ This project uses the **MovieLens 100k Dataset**, which contains 100,000 ratings
 
 
 
+
+
+
 ### Codes
 
 
@@ -46,6 +49,7 @@ This project uses the **MovieLens 100k Dataset**, which contains 100,000 ratings
 -   **`content_based.py`**: Builds the content-based model using TF-IDF on movie genres and computes a cosine similarity matrix.
 -   **`item_item_cf.py`**: An implementation of a classic item-item collaborative filtering model, serving as an alternative baseline model.
 -   **`hybrid_recommender.py`**: Contains the core logic for the hybrid system, combining scores from the SVD and content-based models to generate the final recommendations.
+
 
 The main script to run the full training and evaluation pipeline is `evaluate_hybrid.py`.
 
@@ -70,5 +74,9 @@ The hybrid model was evaluated on its ability to predict movies a user would rat
 | **Average Recall@10**| `0.0620` | The model successfully found **6.2%** of all relevant items for a user within its top 10 list. |
 
 These results demonstrate a well-performing system that accurately predicts ratings and excels at ranking highly relevant items at the top of its recommendation lists.
+
+
+## 📜 License
+This project is licensed under the MIT License.
 
 
